@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="adven.png">
+    <title>Contact Us Page </title>
+
+
+    <h1>Contact US</h1>
+
+    <h3>Get in Touch!</h3>
+
+    <style>
+        h1 {
+            text-align: center;
+            color: brown;
+            text-shadow: 4px 4px 4px gray;
+        }
+
+        h2 {
+            color: darkblue;
+        }
+
+        body {
+
+            background-color: bisque;
+        }
+
+        table,
+        th,
+        td {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="thankyou.html" method="GET" target="_blank">
+        <table>
+            <tr>
+                <td><label for="name">Name <span class="one">*</span></label></td>
+                <td><input type="text" id="name" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="email">Email <span class="one">*</span></label></td>
+                <td><input type="email" id="email" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="pno">Phone Number <span class="one">*</span></label></td>
+                <td><input type="number" id="pno" required pattern="[6-9]{1}[0-9]{9}"></td>
+            </tr>
+
+            <tr>
+                <td><label for="it">Inquiry Type <span class="one">*</span></label> </td>
+                <td>
+                    <select required>
+                        <option>General Inquiry</option>
+                        <option>Booking</option>
+                        <option>Support</option>
+                        <option>Feedback</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="mes">Message <span class="one">*</span> </label></td>
+                <td>
+                    <textarea id="mes" col="30" row="10" required> </textarea>
+                </td>
+            </tr>
+
+        </table>
+        <input type="submit"> <br> <br>
+
+        $copy! 2024 Explore World
+
+    </form>
+
+</body>
+
+</html>
